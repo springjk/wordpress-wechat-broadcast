@@ -15,7 +15,7 @@
     "minimum-stability": "dev",
     "autoload": {
         "psr-4": {
-            "Springjk\\Wechat\\": "src"
+            "EasyWeChat\\": "src/"
         }
     }   
 }
