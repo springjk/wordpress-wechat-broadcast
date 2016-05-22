@@ -48,7 +48,7 @@
 
   $upload_articles_result = $broadcast->uploadArticles($articles); // 如需重复使用请进行持久化
 
-  // 预览接口，如为测试账号仅能使用预览接口。
+  // 预览接口，如为测试账号仅能使用预览接口，正式发送使用 send 方法。
   $send_news_status = $broadcast->previewByName($upload_articles_result['media_id'], 'your-wechat-name');
 
   // $send_news_status= $broadcast->send($upload_articles_result['media_id']);
