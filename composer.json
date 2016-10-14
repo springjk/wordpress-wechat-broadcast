@@ -1,21 +1,5 @@
 {
-    "name": "springjk/wechat",
-    "description": "微信群发",
-    "type": "library",
     "require": {
-        "overtrue/wechat": "~3.0"
-    },
-    "license": "MIT",
-    "authors": [
-        {
-            "name": "Jiang Kun",
-            "email": "chinese.jk@gmail.com"
-        }
-    ],
-    "minimum-stability": "dev",
-    "autoload": {
-        "psr-4": {
-            "Springjk\\": "src/"
-        }
-    }   
+        "overtrue/wechat": "^3.1"
+    }
 }
