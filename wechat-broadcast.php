@@ -48,16 +48,16 @@ function wechat_broadcast($post_ID, $post)
 function get_article($post)
 {
     $title = $post->post_title;
-    $digest = $post->post_excerpt;
     $content = $post->post_content;
-    $content_source_url = $post->guid;
+    $digest = get_the_excerpt($post->ID);
+    $content_source_url = get_the_permalink($post);
 
     $thumb_array =  wp_get_attachment_image_src(get_post_thumbnail_id($post->ID), 'medium');
     $parsed = parse_url($thumb_array[0]);
 
     $thumb  =  empty($parsed['path']) ? '' : $_SERVER['DOCUMENT_ROOT'] . $parsed['path'];
 
-    $broadcast_data = compact('title', 'digest', 'content', 'content_source_url', 'thumb');
+    $broadcast_data = compact('title', 'content', 'digest', 'content_source_url', 'thumb');
 
     return $broadcast_data;
 }
