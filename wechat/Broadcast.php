@@ -371,7 +371,7 @@ class Broadcast {
      */
     public function add_settings_link($links, $file)
     {
-        if (dirname($file) == 'wechat-broadcast'){
+        if (basename($file) == 'wechat-broadcast.php'){
             $settings_link = [
                 'setting' => '<a href="' . admin_url('options-general.php?page=wechat') . '">设置</a>'
             ];
