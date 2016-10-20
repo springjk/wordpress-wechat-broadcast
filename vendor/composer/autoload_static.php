@@ -437,6 +437,7 @@ class ComposerStaticInit9b71bc50bc05850a5975842e4ba4ce46
         'Symfony\\Bridge\\PsrHttpMessage\\Tests\\Fixtures\\ServerRequest' => __DIR__ . '/..' . '/symfony/psr-http-message-bridge/Tests/Fixtures/ServerRequest.php',
         'Symfony\\Bridge\\PsrHttpMessage\\Tests\\Fixtures\\Stream' => __DIR__ . '/..' . '/symfony/psr-http-message-bridge/Tests/Fixtures/Stream.php',
         'Symfony\\Bridge\\PsrHttpMessage\\Tests\\Fixtures\\UploadedFile' => __DIR__ . '/..' . '/symfony/psr-http-message-bridge/Tests/Fixtures/UploadedFile.php',
+        'Symfony\\Bridge\\PsrHttpMessage\\Tests\\Fixtures\\Uri' => __DIR__ . '/..' . '/symfony/psr-http-message-bridge/Tests/Fixtures/Uri.php',
         'Symfony\\Component\\HttpFoundation\\AcceptHeader' => __DIR__ . '/..' . '/symfony/http-foundation/AcceptHeader.php',
         'Symfony\\Component\\HttpFoundation\\AcceptHeaderItem' => __DIR__ . '/..' . '/symfony/http-foundation/AcceptHeaderItem.php',
         'Symfony\\Component\\HttpFoundation\\ApacheRequest' => __DIR__ . '/..' . '/symfony/http-foundation/ApacheRequest.php',

@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "184feab9021511a410041af31fffa94f",
+    "hash": "558f9e7f931165e371e85fc9c52aafcb",
     "content-hash": "a21bdd80028fea556230a083f705b9fc",
     "packages": [
         {
@@ -328,16 +328,16 @@
         },
         {
             "name": "overtrue/socialite",
-            "version": "1.0.17",
+            "version": "1.0.18",
             "source": {
                 "type": "git",
                 "url": "https://github.com/overtrue/socialite.git",
-                "reference": "8d3785c2cf0fedaad4fbfe252ed53589359657cb"
+                "reference": "f45a64720c5de067146ebd8645beecb72b18487c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/overtrue/socialite/zipball/8d3785c2cf0fedaad4fbfe252ed53589359657cb",
-                "reference": "8d3785c2cf0fedaad4fbfe252ed53589359657cb",
+                "url": "https://api.github.com/repos/overtrue/socialite/zipball/f45a64720c5de067146ebd8645beecb72b18487c",
+                "reference": "f45a64720c5de067146ebd8645beecb72b18487c",
                 "shasum": ""
             },
             "require": {
@@ -374,20 +374,20 @@
                 "wechat",
                 "weibo"
             ],
-            "time": "2016-10-09 10:27:53"
+            "time": "2016-10-12 10:23:13"
         },
         {
             "name": "overtrue/wechat",
-            "version": "3.1.3",
+            "version": "3.1.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/overtrue/wechat.git",
-                "reference": "68e325d14c3460e3e789e947bce37ec8befc8aaf"
+                "reference": "313b193bcbf62968db87c8735a0c1d8c7eaf3fe0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/overtrue/wechat/zipball/68e325d14c3460e3e789e947bce37ec8befc8aaf",
-                "reference": "68e325d14c3460e3e789e947bce37ec8befc8aaf",
+                "url": "https://api.github.com/repos/overtrue/wechat/zipball/313b193bcbf62968db87c8735a0c1d8c7eaf3fe0",
+                "reference": "313b193bcbf62968db87c8735a0c1d8c7eaf3fe0",
                 "shasum": ""
             },
             "require": {
@@ -399,11 +399,11 @@
                 "php": ">=5.5.0",
                 "pimple/pimple": "~3.0",
                 "symfony/http-foundation": "~2.6|~2.7|~2.8|~3.0",
-                "symfony/psr-http-message-bridge": "0.2"
+                "symfony/psr-http-message-bridge": "~0.3"
             },
             "require-dev": {
                 "mockery/mockery": "^1.0@dev",
-                "overtrue/phplint": "*",
+                "overtrue/phplint": "dev-master",
                 "phpunit/phpunit": "~4.0"
             },
             "type": "library",
@@ -432,7 +432,7 @@
                 "weixin",
                 "weixin-sdk"
             ],
-            "time": "2016-08-08 13:37:53"
+            "time": "2016-10-19 08:53:00"
         },
         {
             "name": "pimple/pimple",
@@ -691,16 +691,16 @@
         },
         {
             "name": "symfony/psr-http-message-bridge",
-            "version": "v0.2",
+            "version": "v0.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/psr-http-message-bridge.git",
-                "reference": "dc7e308e1dc2898a46776e2221a643cb08315453"
+                "reference": "1c30b1781a5497ba0330769c7ddeb649d9e2f51e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/psr-http-message-bridge/zipball/dc7e308e1dc2898a46776e2221a643cb08315453",
-                "reference": "dc7e308e1dc2898a46776e2221a643cb08315453",
+                "url": "https://api.github.com/repos/symfony/psr-http-message-bridge/zipball/1c30b1781a5497ba0330769c7ddeb649d9e2f51e",
+                "reference": "1c30b1781a5497ba0330769c7ddeb649d9e2f51e",
                 "shasum": ""
             },
             "require": {
@@ -712,6 +712,7 @@
                 "symfony/phpunit-bridge": "~2.7|~3.0"
             },
             "suggest": {
+                "psr/http-message-implementation": "To use the HttpFoundation factory",
                 "zendframework/zend-diactoros": "To use the Zend Diactoros factory"
             },
             "type": "symfony-bridge",
@@ -741,7 +742,7 @@
                 "http-message",
                 "psr-7"
             ],
-            "time": "2015-05-29 17:57:12"
+            "time": "2016-09-13 23:40:43"
         }
     ],
     "packages-dev": [],

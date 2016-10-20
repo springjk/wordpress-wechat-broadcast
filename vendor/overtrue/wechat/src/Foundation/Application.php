@@ -30,6 +30,7 @@ use Doctrine\Common\Cache\FilesystemCache;
 use EasyWeChat\Core\AccessToken;
 use EasyWeChat\Core\Http;
 use EasyWeChat\Support\Log;
+use Monolog\Handler\HandlerInterface;
 use Monolog\Handler\NullHandler;
 use Monolog\Handler\StreamHandler;
 use Monolog\Logger;
@@ -229,6 +230,8 @@ class Application extends Container
 
         if (!$this['config']['debug'] || defined('PHPUNIT_RUNNING')) {
             $logger->pushHandler(new NullHandler());
+        } elseif ($this['config']['log.handler'] instanceof HandlerInterface) {
+            $logger->pushHandler($this['config']['log.handler']);
         } elseif ($logFile = $this['config']['log.file']) {
             $logger->pushHandler(new StreamHandler($logFile, $this['config']->get('log.level', Logger::WARNING)));
         }

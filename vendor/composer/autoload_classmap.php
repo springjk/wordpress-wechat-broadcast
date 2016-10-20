@@ -326,6 +326,7 @@ return array(
     'Symfony\\Bridge\\PsrHttpMessage\\Tests\\Fixtures\\ServerRequest' => $vendorDir . '/symfony/psr-http-message-bridge/Tests/Fixtures/ServerRequest.php',
     'Symfony\\Bridge\\PsrHttpMessage\\Tests\\Fixtures\\Stream' => $vendorDir . '/symfony/psr-http-message-bridge/Tests/Fixtures/Stream.php',
     'Symfony\\Bridge\\PsrHttpMessage\\Tests\\Fixtures\\UploadedFile' => $vendorDir . '/symfony/psr-http-message-bridge/Tests/Fixtures/UploadedFile.php',
+    'Symfony\\Bridge\\PsrHttpMessage\\Tests\\Fixtures\\Uri' => $vendorDir . '/symfony/psr-http-message-bridge/Tests/Fixtures/Uri.php',
     'Symfony\\Component\\HttpFoundation\\AcceptHeader' => $vendorDir . '/symfony/http-foundation/AcceptHeader.php',
     'Symfony\\Component\\HttpFoundation\\AcceptHeaderItem' => $vendorDir . '/symfony/http-foundation/AcceptHeaderItem.php',
     'Symfony\\Component\\HttpFoundation\\ApacheRequest' => $vendorDir . '/symfony/http-foundation/ApacheRequest.php',
