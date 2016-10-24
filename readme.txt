@@ -1,14 +1,15 @@
 # 微信群发助手-Wechat Broadcast
 Contributors: springjk
 Donate link: http://80.me/
-Tags: wechat, broadcast
+Tags: wechat, broadcast, weixin
 Requires at least: 3.0.1
 Tested up to: 4.6.1
-Stable tag: 1.1
+Stable tag: 1.1.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-将文章内容推送给微信公众号订阅用户。Send article content to wechat subscribers.
+将文章内容推送给微信公众号订阅用户。
+Send article content to wechat subscribers.
 
 ## Description
 
