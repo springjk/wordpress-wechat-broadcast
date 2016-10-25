@@ -34,13 +34,14 @@ Send article content to wechat subscribers.
 
 短标签使用：
 
-1. 在文章或页面编辑页中选择文本
-2. 在需要插入的地方填入 `[wechat_material]`
+* 在文章或页面编辑页中选择文本
+* 在需要插入的地方填入 `[wechat_material]`
 
 * 可选参数 `col`, 显示列数，默认为 3，可选为 2
 * 可选参数 `title`, 是否显示标题，默认为 `true`，`false` 为不显示
 * 可选参数 `thumb`, 是否显示缩略图，默认为 `true`，`false` 为不显示
 * 可选参数 `digest`, 是否显示简介，默认为 `true`，`false` 为不显示
+
 * 完整示例 `[wechat_material col="3" title="true" thumb="true" digest="true"]`
 
 如果发现任何bug或者有什么新功能需求，欢迎 PR 或 提交 isuse。

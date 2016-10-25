@@ -70,6 +70,7 @@ class Material {
         ';
 
         $output .= '<div class="wechat-material-list">';
+        $this_dir = str_replace($_SERVER['DOCUMENT_ROOT'], '', __DIR__);
 
         foreach ($news['item'] as $key => $value) {
             foreach ($value['content']['news_item'] as $k => $v) {
@@ -83,7 +84,7 @@ class Material {
                 }
 
                 if ($attr['thumb'] !== 'false') {
-                    $output .= '<p class="image-container"><img src="http://read.html5.qq.com/image?src=forum&q=5&r=0&;imgflag=7&imageUrl=' . $v['thumb_url'] . '"></p>';
+                    $output .= '<p class="image-container"><img src="' . $this_dir . '/Image.php?url=' . $v['thumb_url'] . '"></p>';
                 }
 
                 $output .= '</a>';
