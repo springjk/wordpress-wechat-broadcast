@@ -44,6 +44,6 @@ Send article content to wechat subscribers.
 
 * 完整示例 `[wechat_material col="3" title="true" thumb="true" digest="true"]`
 
-如果发现任何bug或者有什么新功能需求，欢迎 PR 或 提交 isuse。
+如果发现任何bug或者有什么新功能需求，欢迎 PR 或 提交 issue。
 
 GitHub: https://github.com/springjk/wordpress-wechat-broadcast.
