@@ -1,12 +1,4 @@
 # 微信群发助手-Wechat Broadcast
-Contributors: springjk
-Donate link: http://80.me/
-Tags: wechat, broadcast, weixin
-Requires at least: 3.0.1
-Tested up to: 4.6.1
-Stable tag: 1.1.0
-License: GPLv2 or later
-License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
 将文章内容推送给微信公众号订阅用户。
 Send article content to wechat subscribers.
@@ -43,6 +35,7 @@ Send article content to wechat subscribers.
 * 可选参数 `digest`, 是否显示简介，默认为 `true`，`false` 为不显示
 
 * 完整示例 `[wechat_material col="3" title="true" thumb="true" digest="true"]`
+
 
 如果发现任何bug或者有什么新功能需求，欢迎 PR 或 提交 issue。
 
