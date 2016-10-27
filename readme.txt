@@ -15,6 +15,10 @@ Send article content to wechat subscribers.
 
 在发布文章的时候可选同步推送到微信公众号订阅用户。
 
+需求：
+
+* PHP >= 5.5.9
+
 特色：
 
 * 上传文章或页面内容至微信素材库并推送给订阅用户

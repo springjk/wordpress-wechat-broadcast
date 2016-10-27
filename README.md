@@ -7,6 +7,10 @@ Send article content to wechat subscribers.
 
 在发布文章的时候可选同步推送到微信公众号订阅用户。
 
+需求：
+
+* PHP >= 5.5.9
+
 特色：
 
 * 上传文章或页面内容至微信素材库并推送给订阅用户
@@ -16,7 +20,7 @@ Send article content to wechat subscribers.
 * 不与其他插件及第三方管理系统冲突
 * 微信支持为 EasyWeChat
 
-推送使用：
+群发使用：
 
 1. 安装插件后启用插件
 2. 点击插件下方的插件设置连接或选择后台菜单的设置->微信
