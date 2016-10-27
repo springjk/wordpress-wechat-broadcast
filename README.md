@@ -1,11 +1,7 @@
 # 微信群发助手-Wechat Broadcast
 
-将文章内容推送给微信公众号订阅用户。
-Send article content to wechat subscribers.
-
-## Description
-
 在发布文章的时候可选同步推送到微信公众号订阅用户。
+Send article content to wechat subscribers.
 
 需求：
 
