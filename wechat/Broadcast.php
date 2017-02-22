@@ -29,7 +29,7 @@ class Broadcast {
      */
     public function wechat_broadcast($post_ID, $post)
     {
-        if (!empty($_POST['wechat_push_switch'])) {
+        if ($_POST['wechat_push_switch'] == 'on') {
 
             $article_data =  $this->get_article($post);
 
@@ -123,7 +123,8 @@ class Broadcast {
 
             $broadcast = $wechat->broadcast;
 
-            if ($_POST['wechat_push_switch'] == 'preview') {
+            if ($_POST['wechat_preview_switch'] == 'on') {
+
                 $post_data['wechat_preview_user'] = esc_attr(get_option('wechat_preview_user'));
 
                 if (empty($post_data['wechat_preview_user'])) {
@@ -154,7 +155,7 @@ class Broadcast {
 
                 $upload_articles_result = $material->uploadArticle($articles);
 
-                if ($_POST['wechat_push_switch'] == 'preview') {
+                if (isset($post_data['wechat_preview_user'])) {
                     $send_status = $broadcast->previewNewsByName($upload_articles_result['media_id'], $post_data['wechat_preview_user']);
                 } else {
                     $send_news_status= $broadcast->sendNews($upload_articles_result['media_id']);
@@ -176,7 +177,7 @@ class Broadcast {
                     $text .= '<a href="' . $post_data['content_source_url'] . '">点此访问</a>';
                 }
 
-                if ($_POST['wechat_push_switch'] == 'preview') {
+                if (isset($post_data['wechat_preview_user'])) {
                     $send_status = $broadcast->previewTextByName($text, $post_data['wechat_preview_user']);
                 } else {
                     $send_status= $broadcast->sendText($text);
@@ -312,6 +313,7 @@ class Broadcast {
                     <li>2.图片与图文消息上传类型为永久素材;</li>
                     <li>3.发布内容中的图片格式支持相对网络路径与绝对网络路径;</li>
                     <li>4.当发布内容被设置了<code>特色图像</code>时推送为图文消息，否则为文本消息;</li>
+                    <li>5.选择预览发送时将使用预览接口发送，仅发送给预设的预览微信用户，不浪费推送次数;</li>
                 </ul>
             </div>
         </div>
@@ -325,9 +327,23 @@ class Broadcast {
      */
     public function new_meta_box()
     {
-        echo '<input type="radio" name="wechat_push_switch" value="push" id="push"/><label for="push">微信群发</label><br>';
-        echo '<input type="radio" name="wechat_push_switch" value="preview" id="preview"/><label for="preview">微信群发预览</label>';
-        echo '<a href="/wp-admin/options-general.php?page=wechat" style="float: right;"><span aria-hidden="true">帮助</span></a>';
+    ?>
+        <div>
+            <input type="checkbox" name="wechat_push_switch" id="wechat_push_switch"/><label for="wechat_push_switch">微信群发</label>
+            <a href="/wp-admin/options-general.php?page=wechat" style="float: right;"><span aria-hidden="true">帮助</span></a>
+        </div>
+        <div id="wechat_preview_switch_group" style="display: none">
+            <input type="checkbox" name="wechat_preview_switch" id="wechat_preview_switch"/><label for="wechat_preview_switch">群发时仅发送预览账号</label>
+        </div>
+
+        <script type="text/javascript">
+            jQuery(document).ready(function($) {
+                $('#wechat_push_switch').on('click', function(){
+                    $('#wechat_preview_switch_group').toggle();
+                });
+            });
+        </script>
+    <?php
     }
 
     /**
