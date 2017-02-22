@@ -3,8 +3,8 @@ Contributors: springjk
 Donate link: http://80.me/
 Tags: wechat, broadcast, weixin
 Requires at least: 3.0.1
-Tested up to: 4.6.1
-Stable tag: 1.1.0
+Tested up to: 4.7.2
+Stable tag: 1.2.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -13,7 +13,7 @@ Send article content to wechat subscribers.
 
 ## Description
 
-在发布文章的时候可选同步推送到微信公众号订阅用户。
+在发布文章的时候可选同步推送到微信公众号订阅用户(需要已付费认证公众号)。
 
 需求：
 
@@ -33,7 +33,7 @@ Send article content to wechat subscribers.
 1. 安装插件后启用插件
 2. 点击插件下方的插件设置连接或选择后台菜单的设置->微信
 3. 配置微信公众号的 APPID 账号相关信息
-4. 在文章或页面编辑页右上方微信推送选项勾选预览或群发
+4. 在文章或页面编辑页右上方微信推送选项勾选群发及是否预览
 5. 点击更新或发布按钮
 
 短标签使用：
@@ -48,6 +48,10 @@ Send article content to wechat subscribers.
 
 * 完整示例 `[wechat_material col="3" title="true" thumb="true" digest="true"]`
 
-如果发现任何bug或者有什么新功能需求，欢迎 PR 或 提交 issue。
+支持：
+
+如果发现任何 bug 或者有功能建议，欢迎 PR 或 提交 issue。
 
 GitHub: https://github.com/springjk/wordpress-wechat-broadcast.
+
+Mail: chinese.jk@gmail.com
